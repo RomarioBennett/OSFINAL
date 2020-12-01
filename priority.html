@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>CPU Scheduling Algorithm Visualization</title>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+<script src="priority.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="priority.css"/>
+<script>
+$(function () {//code inside this ready funtion will run once to page is fully loaded
+  
+      
+      jQuery('#quantumParagraph').show(500);
+    
+    
+  
+});
+</script>
+</head>
+<body class="content">
+
+
+<div>
+  <div>
+    Round Robin
+   
+    <br>
+    <input type="button" value="Add Process" class="addp" onclick="createProcess();"/>
+    <input id="minus"  type="button" value="Remove Process"class="remp" onclick="removeProcess();" />
+    <input type="button" value="Go"class="run" onclick="draw();"/>
+    <input type="button" value="Reset"class="rld" onclick="refresh();"/>
+    <p>
+      Total Run Time: <strong id="timer"></strong> 
+      </p>
+      <p>
+          Average Run Time: <strong id="avgt"></strong> 
+          </p>
+
+          
+  </div>
+    <table id="mainTable">
+        <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>BURST TIME</th>
+            
+        </tr>
+        <tr>
+            <td>P0</td>
+            <td>0</td>
+            <td><input class="default" type="text" value="5" /></td>
+          
+           
+        </tr>
+        <tr>
+            <td>P1</td>
+            <td>1</td>
+            <td><input class="default" value="3" /></td>
+           
+        
+        </tr>
+        <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td><input class="default" value="6" /></td>
+                
+              
+            </tr>
+    </table>
+   
+    </div>
+
+    <script>function createProcess() {
+      var targetrw = jQuery('#mainTable tr:last');
+      var rownum = parseInt(targetrw.children()[1].innerText);
+    
+      var newRow = '<tr><td>P'
+      + (rownum + 1)
+      + '</td><td>'
+      + (rownum + 1)
+      + '</td><td><input class="default" type="text"/></td></tr>';
+    
+      targetrw.after(newRow);
+    
+      var minus = jQuery('#minus');
+      minus.show();
+      minus.css('top', (parseFloat(minus.css('top')) + 24) + 'px');
+    
+     
+    
+    
+      jQuery('#mainTable tr:last input').change(function () {
+        recalculateServiceTime();
+      });
+    }
+
+
+
+
+    function removeProcess() {
+  var targetrw = jQuery('#mainTable tr:last');
+  targetrw.remove();
+
+  var minus = jQuery('#minus');
+  minus.css('top', (parseFloat(minus.css('top')) - 24) + 'px');
+
+  if (parseFloat(minus.css('top')) < 150)
+    minus.hide();
+}
+
+function refresh(){
+  location.reload(true);
+
+
+}
+
+jQuery(".initial").change(function () {
+  recalculateServiceTime();
+});
+    </script>
+
+   
+<div>
+  </div>    
+    <p id="quantumParagraph" hidden>Quantum: 
+        <input style="width: 50px;" id="quantum" type="text" value="3" />
+    </p>
+  
+   
+<runspace></runspace>
+    
+    
+
+</body>
+</html>
+
+

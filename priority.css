@@ -1,0 +1,164 @@
+.content {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  body {
+    text-align: center;
+}
+
+th {
+            background: linear-gradient(black, lightgray);
+            text-align: left;
+            border: 1px solid black;
+            height: 400 px;
+         }
+
+
+
+
+div th, div td {
+            border: 1px solid white;
+            text-align: center;
+               }
+
+
+
+table {
+                font-family: "Arial Black", Gadget, sans-serif;
+                border: 2px solid #000000;
+                background-color: #4A4A4A;
+                width: 100%;
+                height: 50px;
+            
+              }
+              table td, table th {
+                border: 1px solid #4A4A4A;
+                padding: 3px 2px;
+              }
+              table tbody td {
+                font-size: 13px;
+                color: #E6E6E6;
+              }
+              table.e tr:nth-child(even) {
+                background: #888888;
+              }
+              table thead {
+                background: #ffffff;
+                border-bottom: 3px solid #ffffff;
+              }
+              table thead th {
+                font-size: 15px;
+                font-weight: bold;
+                color: #E6E6E6;
+                text-align: center;
+                border-left: 2px solid #4A4A4A;
+              }
+              table thead th:first-child {
+                border-left: none;
+              }
+              
+              table tfoot {
+                font-size: 12px;
+                font-weight: bold;
+                color: #E6E6E6;
+               
+              }
+              table  tfoot td {
+                font-size: 12px;
+              }
+
+input   {
+        text-align: center;
+        }
+
+#curtain {
+          background-color:#000000;
+         }
+
+
+         .addp {
+          box-shadow: 0px 1px 0px 0px #1c1b18;
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+          border-radius:15px;
+          border:2px solid #333029;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+         
+        }
+        .addp:hover {
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+        }
+        .addp:active {
+          position:relative;
+          top:1px;
+        }
+        
+
+        .remp {
+          box-shadow: 0px 1px 0px 0px #1c1b18;
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+          border-radius:15px;
+          border:2px solid #333029;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+         
+        }
+        .remp:hover {
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+        }
+        .remp:active {
+          position:relative;
+          top:1px;
+        }
+        
+
+
+
+        .run{
+          box-shadow: 0px 1px 0px 0px #1c1b18;
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+          border-radius:15px;
+          border:2px solid #333029;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+         
+        }
+        .run {
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+        }
+        .run:active {
+          position:relative;
+          top:1px;
+        }
+
+        .rld {
+          box-shadow: 0px 1px 0px 0px #1c1b18;
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+          border-radius:15px;
+          border:2px solid #333029;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+         
+        }
+        .rld:hover {
+          background:linear-gradient(to bottom, #2d2e29 5%, #2d2e29 100%);
+          background-color:#2d2e29;
+        }
+        .rld:active {
+          position:relative;
+          top:1px;
+        }
+        
+                
